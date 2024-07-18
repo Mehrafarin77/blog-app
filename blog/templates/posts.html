@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content%}
+    <h1>All Posts</h1>
+    <hr>
+    <ul>
+        {% for post in all_posts %}
+            <li class="post_entry">
+                <a href="{% url 'post_update' post.pk %}">
+                    <h2>{{ post.title }}</h2>
+                </a>
+                <h4> {{ post.body }}</h4>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock content%}

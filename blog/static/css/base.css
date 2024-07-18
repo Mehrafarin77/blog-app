@@ -1,0 +1,25 @@
+body{
+    font-family: cursive;
+}
+h2{
+    color: purple;
+}
+li{
+    list-style: decimal;
+    font-size: 1.3em;
+}
+h1{
+    color: red;
+}
+h4{
+    font-weight: 100;
+    color: blue;
+}
+button{
+    color: green;
+    padding: 10px 20px;
+}
+a{
+    text-decoration: none;
+    color: sienna;
+}

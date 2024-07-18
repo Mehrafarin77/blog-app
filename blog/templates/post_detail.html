@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content%}
+    <!-- blog(lowercase of model class): the single item for more details -->
+    <!-- or even we can use (object) instead of (blog)-->
+    <h2>{{ blog.title }}</h2>
+    <p>{{ blog.body }}</p>
+
+    <a href="{% url 'post_update' blog.pk %}">+ Edit blog post</a> |
+    <a href="{% url 'post_delete' blog.pk %}">- Delete blog post</a>
+
+{% endblock content%}

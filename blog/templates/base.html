@@ -1,0 +1,15 @@
+{% load static %}
+
+<html>
+    <head>
+        <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    </head>
+    <body>
+        <a href="{% url 'home' %}">Home</a> |
+        <a href="{% url 'post' %}">Posts</a> |
+        <a href="{% url 'post_new' %}">+ new blog post</a> |
+    </body>
+</html>
+
+{% block content %}
+{% endblock content%}
